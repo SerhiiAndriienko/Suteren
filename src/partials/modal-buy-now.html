@@ -1,0 +1,79 @@
+<div class="modal modal-product-card" data-modal="1">
+  <button class="modal__cross js-modal-close" type="button">
+    <svg>
+      <use href="./images/icons.svg#icon-cross"></use>
+    </svg>
+  </button>
+  <p class="product-card-text">Buy now</p>
+  <form>
+    <ul class="checkbox-list">
+      <li>
+        <input
+          class="checkbox"
+          type="checkbox"
+          name="ice-cream"
+          id="ice-cream"
+        />
+        <label class="costomers-checkbox-ice-cream" for="ice-cream">
+          <span class="checkbox-text">ice cream</span>
+        </label>
+      </li>
+
+      <li>
+        <input
+          class="checkbox"
+          type="checkbox"
+          name="ice coffee"
+          id="ice-coffee"
+        />
+        <label class="costomers-checkbox-ice-coffee" for="ice-coffee">
+          <span class="checkbox-text">ice coffee</span>
+        </label>
+      </li>
+
+      <li>
+        <input
+          class="checkbox"
+          type="checkbox"
+          name="milkshake"
+          id="milkshake"
+        />
+        <label class="costomers-checkbox-milkshake" for="milkshake">
+          <span class="checkbox-text">milkshake</span>
+        </label>
+      </li>
+    </ul>
+    <label>
+      <input
+        class="contact-form"
+        type="text"
+        name="name-user-buy-now"
+        placeholder="Name"
+        pattern="^[a-zA-Z]+$"
+        title="Enter your name"
+        required
+      />
+    </label>
+    <label>
+      <input
+        class="contact-form"
+        type="tel"
+        name="number-phone-user-buy-now"
+        placeholder="Phone"
+        id="phone-user"
+        pattern="[+][0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+        title="Enter your phone number in this format: +380-00-000-00-00"
+        required
+      />
+    </label>
+    <textarea
+      class="contact-form-texteria"
+      name="comment-buy-now"
+      id="comment-buy-now"
+      placeholder="Comment"
+    ></textarea>
+    <label for="comment-buy-now"></label>
+    <button class="buy-now-button" type="submit">Submit</button>
+  </form>
+</div>
+<div class="overlay js-overlay-modal"></div>
